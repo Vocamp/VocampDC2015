@@ -104,17 +104,27 @@ Material category - classification (sub-type of Material)  and field name (free 
 
 <b>Notes of Feature</b>
 Some use a broad Feature concept such as SSN and O & M.
+The 'Feature' is the fundamental unit of geospatial information, so the Feature Model is the fundamental meta-model used for developing an Application Schema.
+Features are typed objects with identity. This is often referred to as "vector" data in traditional GIS.
+Feature types are defined by a characteristic set of properties (i.e. their attributes, associations, operations). A feature type is usually specific to an application domain, and will be part of a Feature Type Catalogue (FTC) that describes a key part of the language of a domain. Features often correspond with objects that are recognisable in the real world, such as road, mine, truck, storm. However, spatial properties are not mandatory, so a feature type could be defined for any item of interest within a domain. This potentially allows data access for both spatial and non-spatial information to be unified through a common interface.
+The General Feature Model is formally defined in ISO 19101 and ISO 19109. For a more detailed discussion, see FeatureModel.
+The OGC Web Feature Service is the primary interface for feature data.
+
 ‘feature’ defined in the ‘Reference Model’ used by OGC and ISO Technical Committee 211 – Geographic Information referring to a
 conceptualization of an entity in the real world. 
 “Sampling features are distinctive compared with other features from application domains by having navigable associations to 
 observations. ”
+
 Examples from ODM2  bore hole, flight line....
 GeoFeatures are often distinguished from other features.
 
 SWEET ontology (Steve it is a Wordnet with no definitions) has properties for objects: “temperature”, “pressure”, “height”, “albedo” .
 We seem to agree that  these  not feature of Interest but are propertie of Features (of Interest).
 
-Sampling Feature: (Simon Cox and O And M)
+Sampling Feature a cruise is a type of a sampling feature
+Also: (Simon Cox and O And M see ISO figure for this and https://www.seegrid.csiro.au/wiki/AppSchemas/ObservationsAndSampling)
+Sub-types of point, surface, etc.
+
 A sampling feature is established in order to make observations concerning some domain feature. The association Intention shall link
 the SF_SamplingFeature to the feature which the sampling feature was designed to sample.
  The target of this association has the role sampledFeature with respect to the sampling feature, and shall not be a sampling feature
@@ -123,6 +133,36 @@ the SF_SamplingFeature to the feature which the sampling feature was designed to
 
 EXAMPLE A profile typically samples a water- or atmospheric-column; a well samples the water in an aquifer;
 a tissue specimen samples a part of an organism
+
+Observation Model
+  Feature of interest
+    Observation location
+    Observation time
+    Observed property and result type
+      Scalar-valued properties
+      Complex-valued properties
+      Variable properties
+      Time Series
+  Sampling model
+    Sampling features classified by shape
+    Specimens
+    Relationships of sampling features to other features
+  
+  Observations vs. Interpretations
+  Examples
+    Observations
+    Sampling features
+      Wells and aquifers
+      Sampling on a ferry track
+      Borehole and outcrop
+      Assay suite on a specimen collected from an outcrop
+
+  
+  OGCInformationModels
+    Observations and Measurements specification documents
+    parent_gray FeatureModel
+    ObservationsAndSampling
+
 
 <B>Notes on Medium</b>
 Sample Medium   The medium in which the sample was collected [e.g. water (Surface Water such as a stream, river, lake, pond, reservoir,
