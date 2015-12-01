@@ -3,7 +3,20 @@ Using Geolink modular oecanorgraphy Ontology
 There is an issue on what is an event in this ontology and if it has been defined well enough to distinguish from process.
 Myaybe see DOLCE on this.
 
-What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress and propoerties.
+What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress 
+and propoerties. See SESAR data with link provided by Steve. 
+See http://www.geosamples.org/help/vocabularies for vocabularies and also http://www.geosamples.org/search
+
+SESAR Sample types: What Samples Can Be Registered in SESAR?
+The System for Earth Sample Registration registers specimens and related sampling features collected from the natural environment. These include, but are not limited to:
+Rock, mineral, or fossil specimens, and sub-samples thereof (e.g. thin sections, mineral concentrates)
+Dredges
+Cores (rock, sediment, ice) and related core sections, section halves, and samples from cores
+Fluid samples (seawater, river or lake water, hydrothermal fluids, porewater)
+Drill holes and wells
+Soil pedons and samples thereof
+Macro- and micro-biology samples
+
 
 Steve's Competenncy quetions.
 * Given that we have a Chemical analysis om a sample
