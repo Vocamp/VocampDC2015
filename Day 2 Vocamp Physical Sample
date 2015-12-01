@@ -3,6 +3,32 @@
 There is an issue on what is an event in this ontology and if it has been defined well enough to distinguish from process.
 Myaybe see DOLCE on this.
 Agent types.  Collector is one of them and DataCite has some roles including Publisher....
+Agent and activity are tied together by "wasAssociated With.
+
+Used Definitions:
+Feature of interest: a feature (so a representation of a real-world object) that carries the property which is observed.
+This can be either a domain feature (aka sampled feature), 
+e.g. “Mississippi”, or a sampling feature, e.g. “water gage X" at Mississippi river.
+
+Place (from DOLCE)
+
+A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the 
+presence of other entities ("the area close to Roma"), pivot events or signs ("the area where the helicopter fell"),
+complements of other entities ("the area under the table"), etc. 
+In this generic sense, a Place is an "approximate" location. For an "absolute" location, see the class SpaceRegion
+
+<u>Our Competency Questions</u>
+1. Given that we are doing a chemicla analysis, where was the sample under analysis collected?
+Scenario - There might be 3 jars of water that was collected from a Feature of Interest - a Lake..The sample is from part of the lake.
+It does raise the Q of the difference bwtween pulling out one water jar of many as the Feature of Interest being (representatively) analyzed.
+How do we get between agregated samples and observations?
+Maybe sampling feature is the site where the sample is collected?
+      Site - a place where a sample is collected. Q was how do we define "place" ?  it has an identifyable location...?
+      We may be equating sampling feature with Site. But Site is a Place and Sampling Feature is a Feature. So Feature of Interest 
+      has a larger place and the SampleFeature is contained withing that.  
+
+Is what we are calling Collection called Sampling Feature Complex?  
+No, that refers to the idea of a Core and other samples collected around a point of that core. Say 3 jars of water.
 --------------------------------------------------------------------------------------------------------------------------
 What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress 
 and propoerties. See SESAR data with link provided by Steve. 
@@ -103,10 +129,18 @@ Material category - classification (sub-type of Material)  and field name (free 
 2 types.  One high level (Rock) and one more specific (igneous).
 
 <b>Notes of Feature</b>
+A fearture is something that has identity, location, and unity.
+
 Some use a broad Feature concept such as SSN and O & M.
-The 'Feature' is the fundamental unit of geospatial information, so the Feature Model is the fundamental meta-model used for developing an Application Schema.
+The 'Feature' is the fundamental unit of geospatial information, so the Feature Model is the fundamental meta-model used for developing 
+an Application Schema.
 Features are typed objects with identity. This is often referred to as "vector" data in traditional GIS.
-Feature types are defined by a characteristic set of properties (i.e. their attributes, associations, operations). A feature type is usually specific to an application domain, and will be part of a Feature Type Catalogue (FTC) that describes a key part of the language of a domain. Features often correspond with objects that are recognisable in the real world, such as road, mine, truck, storm. However, spatial properties are not mandatory, so a feature type could be defined for any item of interest within a domain. This potentially allows data access for both spatial and non-spatial information to be unified through a common interface.
+Feature types are defined by a characteristic set of properties (i.e. their attributes, associations, operations). 
+A feature type is usually specific to an application domain, and will be part of a Feature Type Catalogue (FTC) 
+that describes a key part of the language of a domain. Features often correspond with objects that are 
+recognisable in the real world, such as road, mine, truck, storm. However, spatial properties are not mandatory, 
+so a feature type could be defined for any item of interest within a domain. 
+This potentially allows data access for both spatial and non-spatial information to be unified through a common interface.
 The General Feature Model is formally defined in ISO 19101 and ISO 19109. For a more detailed discussion, see FeatureModel.
 The OGC Web Feature Service is the primary interface for feature data.
 
@@ -171,6 +205,40 @@ Are MaterialType and Medium the same thing (?)  we may be able to distinguish th
 
 
 Notes on Sampling site info
-Spatial sampling has a sample point or  sampling surface.
+See Basic Observations and Sampling Feature Ontology
+http://www.semantic-web-journal.net/system/files/swj890.pdf
+
+Discsussing:
+Listing 4 – A specimen with provenance and preparation information
+<http://handle.net/10273/IGSN.SIOabc123> a saml:Specimen , my:splitCore ,
+ <http://www.opengis.net/def/material/OGC-OM/2.0/rock> ;
+ rdfs:label "SIO specimen abc123"^^xsd:string ;
+ saml:sampledFeature my:midAtlanticRidge ;
+ saml:samplingMethod <http://ldeo.columbia.edu/sampling/ghostbuster> ;
+ saml:samplingTime "2013-06-12T09:25:00.00+11:00"^^xsd:dateTime ;
+ saml:samplingLocation [ a w3geo:Point ;
+ w3geo:alt -1272.0 ;
+w3geo:lat 24.97 ;
+w3geo:long -45.87
+ ] ;
+ saml:currentLocation <http://example.org/various/Warehouse3/shelf9/box67> ;
+ saml:size [ a saml:Measure ;
+ rdf:value "0.46"^^saml:Number ;
+ saml:uom <http://qudt.org/vocab/unit#Kilogram>
+ ] ;
+ saml:samplingFeatureComplex [ a saml:SamplingFeatureComplex ;
+ saml:relatedSamplingFeature <http://handle.net/10273/IGSN.SIOxyz456> ;
+saml:role my:parent
+ ] ;
+ prov:wasDerivedFrom <http://handle.net/10273/IGSN.SIOxyz456> ;
+ prov:wasGeneratedBy [ a prov:Activity ;
+ prov:endedAtTime "2013-08-02T08:15:00.00+11:00"^^xsd:dateTime ;
+ prov:used <http://handle.net/10273/IGSN.SIOxyz456> ;
+prov:wasAssociatedWith my:JohnDoe ;
+prov:wasInformedBy <http://example.org/various/sf-process/jkl987>
+ ] .
+
+
+Spatial sampling has a sample point orsampling surface.
 
 
