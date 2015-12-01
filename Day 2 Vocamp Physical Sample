@@ -6,12 +6,21 @@ Agent types.  Collector is one of them and DataCite has some roles including Pub
 Agent and activity are tied together by "wasAssociated With.
 
 Used Definitions:
+Features (DOLCE) are 'parasitic entities', that exist insofar their host exists. Typical examples of features are holes, bumps, boundaries, 
+or spots of color. Features may be relevant parts of their host, like a bump or an edge, or dependent regions like a hole in a piece 
+of cheese, the underneath of a table, the front of a house, or the shadow of a tree, which are not parts of their host. 
+All features are essential wholes, but no common unity criterion may exist for all of them. However, typical features have a 
+topological unity, as they are singular entities.Here only features of physical endurants are considered.
+
 Feature of interest: a feature (so a representation of a real-world object) that carries the property which is observed.
 This can be either a domain feature (aka sampled feature), 
 e.g. “Mississippi”, or a sampling feature, e.g. “water gage X" at Mississippi river.
 
 Place (from DOLCE)
-
+A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the 
+presence of other entities ("the area close to Roma"), pivot events or signs ("the area where the helicopter fell"), 
+complements of other entities ("the area under the table"), etc. 
+In this generic sense, a Place is an "approximate" location. For an "absolute" location, see the class SpaceRegion
 
 
 Process subClassOf Event
@@ -30,18 +39,38 @@ Event (DOLCE)
  On the other hand, at any time, one can conceive a description that asserts the constraints by which an event of a certian type 
  is such, and in this case, it becomes a situation.
  Since the decision of designing an explicit description that unifies a perdurant depends on context, task, interest, application, etc.
+ 
+ Workflow (DOLCE)
+A Plan that defines Role(s), Task(s), and a specific structure for tasks to be executed, usually supporting the work of an Organization
 
-<u>Our Competency Questions</u>
+Agents, are entiteis acting on its environment.
+Rational agents chooses to act to fulfil its own best interests [51]); autonomous (agent that
+should achieve autonomously goals by making decisions and carrying out
+actions in an environment [17], [15], [13], [1]; mobile (agents can move freely in
+an electronic network, communicating with objects of the environment such
+as information resources of other agents [61]); cognitive(an autonomous agent
+with human-like cognitive features but, in general, any agent that exploits
+explicit knowledge
+
+<u>Our Competency Questions see snapshot</u>
 1. Given that we are doing a chemicla analysis, where was the sample under analysis collected?
 Scenario - There might be 3 jars of water that was collected from a Feature of Interest - a Lake..The sample is from part of the lake.
 It does raise the Q of the difference bwtween pulling out one water jar of many as the Feature of Interest being (representatively) analyzed.
 How do we get between agregated samples and observations?
 Maybe sampling feature is the site where the sample is collected?
-      Site - a place where a sample is collected. Q was how do we define "place" ?  it has an identifyable location...?
+      Site - a place where a sample is collected. 
+      Sites provide information giving the spatial location at which values have been collected. 
+      A facility or location at which observations have been collected. A site may have instruments or equipment installed and
+      may contain multiple other sampling features (e.g., a stream gage, weather station, observation well, etc.). 
+      Additionally, many specimen sampling features may be collected at a site. Sites are also often referred to as stations. 
+      A site is represented as a point, but it may have a geographical footprint that is not a point. 
+      The site coordinates serve as a reference for the site and offsets may be specified from this reference location.
+Can a site have a borehole??
+Q was how do we define "place" ?  it has an identifyable location...?
       We may be equating sampling feature with Site. But Site is a Place and Sampling Feature is a Feature. So Feature of Interest 
       has a larger place and the SampleFeature is contained withing that.  
 
-Is what we are calling Collection called Sampling Feature Complex?  
+Is what we are calling Collection a  Sampling Feature Complex?  
 No, that refers to the idea of a Core and other samples collected around a point of that core. Say 3 jars of water.
 --------------------------------------------------------------------------------------------------------------------------
 What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress 
@@ -81,7 +110,6 @@ Soil pedons and samples thereof
 Macro- and micro-biology samples
 
 <b>Materials Type </b>
-
   Biology
   Gas
   Ice
@@ -118,21 +146,15 @@ Macro- and micro-biology samples
       Wedge- Sample form factor named for the tool used to extract it. Typically 5-20 ml in volume.
 
 
-<u>Steve's Competency quetions.</u>
-* Given that we have a Chemical analysis om a sample
-1. Where was this sample collected?
-2.  What is the provenence (history) of  the analyszed sample material.
-
-* Given a Sample
-what  analytic data was derived?
-
+<u>Steve's Competency questions</>
+Given that we have a Chemical analysis on a sample
+ Where was this sample collected?
+. What is the provenance (history) of  the analyzed sample material.
+ Given a Sample, what  analytic data was derived?
 Given a Fossil Sample
-Are there any isotopic age data from within 1 kn  of where sample was acquired.
-
-
+Are there any isotopic age data from within 1 km  of where sample was acquired.
 Given video mosaic
-Are there any bottom samples in the fielf of view?
-
+Are there any bottom samples in the field of view?
 Where did Geologist X collect samples in 1970?
 
 SESAR vocabulary and issues with Sample type.
@@ -143,7 +165,7 @@ Material category - classification (sub-type of Material)  and field name (free 
 2 types.  One high level (Rock) and one more specific (igneous).
 
 <b>Notes of Feature</b>
-A fearture is something that has identity, location, and unity.
+A feature is something that has identity, location, and unity.
 
 Some use a broad Feature concept such as SSN and O & M.
 The 'Feature' is the fundamental unit of geospatial information, so the Feature Model is the fundamental meta-model used for developing 
