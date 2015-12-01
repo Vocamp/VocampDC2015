@@ -3,6 +3,8 @@ Using Geolink modular oecanorgraphy Ontology
 There is an issue on what is an event in this ontology and if it has been defined well enough to distinguish from process.
 Myaybe see DOLCE on this.
 
+What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress and propoerties.
+
 Steve's Competenncy quetions.
 * Given that we have a Chemical analysis om a sample
 1. Where was this sample collected?
@@ -17,6 +19,31 @@ Are there any isotopic age data from within 1 kn  of where sample was acquired.
 
 Given video mosaic
 Are there any bottom samples in the fielf of view?
+
+Where did Geologist X collect samples in 1970?
+
+SESAR vocabulary and issues with Sample type.
+We see many different types of entities in this list.  it included individual sample and core and site.
+It might be somewhat hierarchical but seems like a confused hierarchy.
+
+Material category - classification (sub-type of Material)  and field name (free text)  Descriotion
+2 types.  One high level (Rock) and one more specific (igneous).
+
+<b>Notes of Feature</b>
+Some use a broad Feature concept such as SSN and O & M.
+‘feature’ defined in the ‘Reference Model’ used by OGC and ISO Technical Committee 211 – Geographic Information referring to a
+conceptualization of an entity in the real world. 
+“Sampling features are distinctive compared with other features from application domains by having navigable associations to 
+observations. ”
+GeoFeatures are often distinguished from other features.
+
+SWEET ontology (Steve it is a Wordnet with no definitions) has properties for objects: “temperature”, “pressure”, “height”, “albedo” .
+We seem to agree that  these  not feature of Interest but are propertie of Features (of Interest).
+
+<B>Notes on Medium</b>
+Sample Medium   The medium in which the sample was collected [e.g. water (Surface Water such as a stream, river, lake, pond, reservoir,
+ocean ), air, sediment, etc.  from CUAHSI Community Observations Data Model Working Design Specifications Document
+Are MaterialType and Medium the same thing (?)  we may be able to distinguish them.
 
 
 
