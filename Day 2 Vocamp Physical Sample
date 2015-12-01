@@ -12,10 +12,24 @@ e.g. “Mississippi”, or a sampling feature, e.g. “water gage X" at Mississi
 
 Place (from DOLCE)
 
-A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the 
-presence of other entities ("the area close to Roma"), pivot events or signs ("the area where the helicopter fell"),
-complements of other entities ("the area under the table"), etc. 
-In this generic sense, a Place is an "approximate" location. For an "absolute" location, see the class SpaceRegion
+
+
+Process subClassOf Event
+
+This is a placeholder for events that are considered in their evolution, or anyway not strictly dependent on agents, tasks, and plans. 
+See Event class for some thoughts on classifying events. See also 'Transition'
+A process may also be defined as the workflows and sequence of events inherent in processes.
+
+Event (DOLCE)
+ Events are said to occur or happen. They are considered perduring entities that unfold over time, i.e., they take up time and have 
+ particupating objects.
+ An occurrence-type is stative or eventive according to whether it holds of the mereological sum of two of its instances, 
+ i.e. if it is cumulative or not. A sitting occurrence (is an event) is stative since the sum of two sittings is still a sitting occurrence.
+ In general, events differ from situations because they are not assumed to have a description from which they depend. 
+ They can be sequenced by some course, but they do not require a description as a unifying criterion.
+ On the other hand, at any time, one can conceive a description that asserts the constraints by which an event of a certian type 
+ is such, and in this case, it becomes a situation.
+ Since the decision of designing an explicit description that unifies a perdurant depends on context, task, interest, application, etc.
 
 <u>Our Competency Questions</u>
 1. Given that we are doing a chemicla analysis, where was the sample under analysis collected?
