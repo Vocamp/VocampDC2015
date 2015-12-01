@@ -2,12 +2,35 @@ Using Geolink modular oecanorgraphy Ontology
 
 There is an issue on what is an event in this ontology and if it has been defined well enough to distinguish from process.
 Myaybe see DOLCE on this.
-
+Agent types.  Collector is one of them and DataCite has some roles including Publisher....
+--------------------------------------------------------------------------------------------------------------------------
 What is the context for samples - it involves things we see in the data such as Geological age (time setting), place and featuress 
 and propoerties. See SESAR data with link provided by Steve. 
 See http://www.geosamples.org/help/vocabularies for vocabularies and also http://www.geosamples.org/search
 
-SESAR Sample types: What Samples Can Be Registered in SESAR?
+Sample types page describes the different samples that can be registered. The sample type vocabulary is listed below. 
+  Core - long cylindrical cores
+  Core Half Round - half-cylindrical products of along-axis split of a whole round
+  Core Piece - material occurring between unambiguous [as curated] breaks in recovery. 
+  Core Quarter Round - quarter-cylindrical products of along-axis split of a half round.
+  Core Section - arbitrarily cut segments of a "core"
+  Core Section Half  - half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter.
+  Core Sub-Piece - unambiguously mated portion of a larger piece noted for curatorial management of the material. 
+  Core Whole Round - cylindrical segments of core or core section material.
+  CTD - a CTD (Conductivity, Temperature, and Depth) cast sample.
+  Cuttings - loose, coarse, unconsolidated material suspended in drilling fluid.
+  Dredge  - a group of rocks collected by dragging a dredge along the seafloor.
+  Grab - a sample (sometimes mechanically collected) from a deposit or area, not intended to be representative of the deposit or area.
+  Hole - hole cavity and walls surrounding that cavity.  
+  Individual Sample - a sample that is an individual unit, including rock hand samples, a biological specimen, or a bottle of fluid.
+                    (seemed like a top level, but then what about multiple samples?)
+  Oriented Core - core that can be positioned on the surface in the same way that it was arranged in the borehole before extraction. 
+  Other - a sample that does not fit any of the existing type designations. It is expected that further detailed description of the particular sample will be provided.
+  Rock Powder - a sample created from pulverizing a rock to powder.
+  Site - a place where a sample is collected.(stange to have this here rather than by itself)
+  Terrestrial Section - a sample of a section of the near-surface Earth, generally in the critical zone.
+
+<b>SESAR Sample types: What Samples Can Be Registered in SESAR?</b>
 The System for Earth Sample Registration registers specimens and related sampling features collected from the natural environment. These include, but are not limited to:
 Rock, mineral, or fossil specimens, and sub-samples thereof (e.g. thin sections, mineral concentrates)
 Dredges
@@ -17,8 +40,45 @@ Drill holes and wells
 Soil pedons and samples thereof
 Macro- and micro-biology samples
 
+<b>Materials Type </b>
 
-Steve's Competenncy quetions.
+  Biology
+  Gas
+  Ice
+  Liquid>aqueous
+  Liquid>organic
+  Mineral
+  NotApplicable
+  Other
+  Particulate
+  Rock
+  Sediment
+  Soil
+  Synthetic
+  
+  Note: ODM2 has a tissue type.
+
+<b>Sub-object types listed below are used by the International Ocean Drilling Program-United States Implementing Organization 
+(IODP-USIO).</b>
+ 
+      Bead- bead pressed from a powder.
+      Chemical Fraction- Parts of a parent sample separated chemically.
+      Cube- Equidimensional prism of material.
+      Culture- Biological material cultured in geological material.
+      Cylinder- Cylinders of material.
+      Mechanical Fraction- Parts of a parent sample separated mechanically.
+      Powder- Fine-grained (<62 micron), dry, granular material.
+      Slab- Rectangular prism of material where one dimension is significantly shorter than the others.
+      Smear- A toothpick sample suspended in liquid and fixed on slide.
+      Specimen- Material of any shape or form selected for specific characteristics of interest.
+      Squeeze Cake- Solid fraction remaining after forced expulsion of interstitial fluids from a source sample; typically has the shape of a cylindrical disc.
+      Thin Section- A sub-millimeter thick slice of material mounted on a glass slide.
+      Toothpick- Minute amount of material taken for observation.
+      U-Channel- Long rectangular prism of material.
+      Wedge- Sample form factor named for the tool used to extract it. Typically 5-20 ml in volume.
+
+
+<u>Steve's Competency quetions.</u>
 * Given that we have a Chemical analysis om a sample
 1. Where was this sample collected?
 2.  What is the provenence (history) of  the analyszed sample material.
@@ -48,10 +108,21 @@ Some use a broad Feature concept such as SSN and O & M.
 conceptualization of an entity in the real world. 
 “Sampling features are distinctive compared with other features from application domains by having navigable associations to 
 observations. ”
+Examples from ODM2  bore hole, flight line....
 GeoFeatures are often distinguished from other features.
 
 SWEET ontology (Steve it is a Wordnet with no definitions) has properties for objects: “temperature”, “pressure”, “height”, “albedo” .
 We seem to agree that  these  not feature of Interest but are propertie of Features (of Interest).
+
+Sampling Feature: (Simon Cox and O And M)
+A sampling feature is established in order to make observations concerning some domain feature. The association Intention shall link
+the SF_SamplingFeature to the feature which the sampling feature was designed to sample.
+ The target of this association has the role sampledFeature with respect to the sampling feature, and shall not be a sampling feature
+ or observation.
+ It is usually a real-world feature from an application domain.
+
+EXAMPLE A profile typically samples a water- or atmospheric-column; a well samples the water in an aquifer;
+a tissue specimen samples a part of an organism
 
 <B>Notes on Medium</b>
 Sample Medium   The medium in which the sample was collected [e.g. water (Surface Water such as a stream, river, lake, pond, reservoir,
@@ -59,5 +130,7 @@ ocean ), air, sediment, etc.  from CUAHSI Community Observations Data Model Work
 Are MaterialType and Medium the same thing (?)  we may be able to distinguish them.
 
 
+Notes on Sampling site info
+Spatial sampling has a sample point or  sampling surface.
 
 
