@@ -43,13 +43,13 @@ Event (DOLCE)
  Workflow (DOLCE)
 A Plan that defines Role(s), Task(s), and a specific structure for tasks to be executed, usually supporting the work of an Organization
 
-Agents, are entiteis acting on its environment.
-Rational agents chooses to act to fulfil its own best interests [51]); autonomous (agent that
-should achieve autonomously goals by making decisions and carrying out
-actions in an environment [17], [15], [13], [1]; mobile (agents can move freely in
-an electronic network, communicating with objects of the environment such
-as information resources of other agents [61]); cognitive(an autonomous agent
-with human-like cognitive features but, in general, any agent that exploits
+Agents, are entiteis acting on its environment. There are some sub-types:
+Rational agents chooses to act to fulfil its own best interests; 
+autonomous (agent that should achieve autonomously goals by making decisions and carrying out
+actions in an environment; 
+mobile (agents can move freely in an electronic network, communicating with objects of the environment such
+as information resources of other agents; 
+cognitive(an autonomous agent with human-like cognitive features but, in general, any agent that exploits
 explicit knowledge
 
 <u>Our Competency Questions see snapshot</u>
