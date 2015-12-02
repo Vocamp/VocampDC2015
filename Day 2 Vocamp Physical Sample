@@ -3,7 +3,7 @@
 There is an issue on what is an event in this ontology and if it has been defined well enough to distinguish from process.
 Myaybe see DOLCE on this.
 Agent types.  Collector is one of them and DataCite has some roles including Publisher....
-Agent and activity are tied together by "wasAssociated With.
+Agent and activity are tied together by "wasAssociated With. See more in definitions
 
 Used Definitions:
 Features (DOLCE) are 'parasitic entities', that exist insofar their host exists. Typical examples of features are holes, bumps, boundaries, 
@@ -43,7 +43,12 @@ Event (DOLCE)
  Workflow (DOLCE)
 A Plan that defines Role(s), Task(s), and a specific structure for tasks to be executed, usually supporting the work of an Organization
 
-Agents, are entiteis acting on its environment. There are some sub-types:
+Agents, are entiteis acting on its environment. 
+An Agent's responsibility for an Activity or Entity is described using the properties prov:wasAssociatedWith and prov:wasAttributedTo,
+respectively. Agents can also be responsible for other Agents' actions. In this case of delegation, 
+the influencing Agent prov:actedOnBehalfOf another Agent that also bears responsibility for the influenced Activity or Entity.
+
+There are some possible sub-types when non-human agents are considered:
 Rational agents chooses to act to fulfil its own best interests; 
 autonomous (agent that should achieve autonomously goals by making decisions and carrying out
 actions in an environment; 
