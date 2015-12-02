@@ -1,0 +1,24 @@
+Pascal's Physical  Sample Feedback
+
+See https://github.com/Vocamp/VocampDC2015/blob/master/Day%201%20VocampDC2015/Pascal%20on%20Sample-GeoVoCampDC.PDF for the slides.
+
+The idea is to make these models easy to understand and he is not a domain experts so he can only comment at the model level.
+
+We have a day 2 type model with some things that need to be developed and modeled.
+He looked at the work of GeoLink which touched on this and the topic is not simple.
+He has a rough draft from their work which is simple and has 4 main things. We can follow throuhg on this and make it stable.
+His model and our match up on the 4 main things starting with Feature.
+We have more detail on sampling process and they have more on Properties and InformationObject.
+InformationObject carries info related to the sample. It is essenetially a type of collection.
+
+Material is intimately connected to Sample. if you take it away the object disapperars but if the name goes away the object is still there.
+
+Observationevent has result and relates to properties assigned to the sample.  This carries authority.
+
+What exactly is a process for sampling that is stable across domains?  Doug Fils provided some input.
+Maybe we take one examle like sea floor drilling as a sub-class say ocean driling.
+
+Feature scares us and is tricky to model. We are aware that is is complicated, but try to make it simple to start with.
+
+Property is also tricky and maybe we make a sub-class that we can model.
+Sugestions - see slide
